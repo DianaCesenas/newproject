@@ -7,17 +7,15 @@ const Approach = () => {
   return (
     <section className="w-full py-20">
       <h1 className="heading">
-        My <span className="text-purple">approach</span>
+        Mis <span className="text-purple">gustos</span>
       </h1>
       {/* remove bg-white dark:bg-black */}
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
         {/* add des prop */}
         <Card
-          title="Planning & Strategy"
-          icon={<AceternityIcon order="Phase 1" />}
-          des="We'll collaborate to map out your website's goals, target audience, 
-          and key functionalities. We'll discuss things like site structure, 
-          navigation, and content requirements."
+          title="Skrillex"
+          icon={<AceternityIcon order="Musica" />}
+          des="Desde la secundaria, he tenido un gusto particular por la música electrónica, especialmente el dubstep. Skrillex es mi artista favorito, y su música ha sido una gran fuente de inspiración para mí."
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -90,9 +88,9 @@ const Card = ({
       style={{
         //   add these two
         //   you can generate the color from here https://cssgradient.io/
-        background: "rgb(4,7,29)",
+        background: "rgb(232, 119, 186)",
         backgroundColor:
-          "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+          "linear-gradient(90deg, rgb(243, 70, 194) 0%, rgb(235, 162, 193) 100%)",
       }}
     >
       {/* change to h-10 w-10 , add opacity-30  */}
