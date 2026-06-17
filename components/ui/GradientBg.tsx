@@ -2,6 +2,7 @@
 import { cn } from "@/lib/utils";
 import { useEffect, useRef, useState } from "react";
 
+//TARJETA DO YOU WANT TO START A PROJECT TOGETHER
 export const BackgroundGradientAnimation = ({
   gradientBackgroundStart = "rgb(212, 32, 140)",
   gradientBackgroundEnd = "rgb(231, 233, 239)",

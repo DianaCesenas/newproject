@@ -67,23 +67,41 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    const text = "hsu@jsmastery.pro";
-    navigator.clipboard.writeText(text);
-    setCopied(true);
+    try {
+      const text = "diana.crivera9@gmail.com"; // Recuerda poner tu correo
+      navigator.clipboard.writeText(text);
+      setCopied(true);
+
+      
+      const fechaActual = new Date().toLocaleString("es-MX");
+
+      console.info(` Correo copiado el ${fechaActual}`);
+
+      console.log(" ¡Correo electrónico copiado exitosamente al portapapeles!",
+      );
+
+      console.error(
+        "(Simulación para revisión) No se pudo conectar a la base de datos para registrar el clic.",
+      );
+    } catch (error) {
+      console.error("Falló al intentar copiar el correo.",
+        error,
+      );
+    }
   };
 
   return (
     <div
       className={cn(
         // remove p-4 rounded-3xl dark:bg-black dark:border-white/[0.2] bg-white  border border-transparent, add border border-white/[0.1] overflow-hidden relative
-        "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
+        "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input root:shadow-none justify-between flex flex-col space-y-4",
         className,
       )}
       style={{
         //   add these two
         //   you can generate the color from here https://cssgradient.io/
-        //Color de las tarjetas donde esta earth
-        background: "rgb(251, 234, 240)",
+        //Color de las tarjetas donde esta earth DESDE I'M VERY FLEXIBLE HASTA TECH ENTHUSIAST
+        background: "rgb(124, 26, 67)",
         backgroundColor:
           "linear-gradient(90deg, rgb(20, 234, 59) 0%, rgba(12,14,35,1) 100%)",
       }}
