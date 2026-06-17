@@ -57,7 +57,7 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I'm Diana, and this is my portfolio showcasing my work as a
+            Hi! I&apos;m Diana, and this is my portfolio showcasing my work as a
             frontend developer.
           </p>
 

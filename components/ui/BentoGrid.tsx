@@ -2,7 +2,8 @@ import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 
 // Also install this npm i --save-dev @types/react-lottie
-import Lottie from "react-lottie";
+import dynamic from "next/dynamic";
+const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
 
 import { cn } from "@/lib/utils";
 
@@ -68,7 +69,7 @@ export const BentoGridItem = ({
 
   const handleCopy = () => {
     try {
-      const text = "diana.crivera9@gmail.com"; 
+      const text = "diana.crivera9@gmail.com"; // Recuerda poner tu correo
       navigator.clipboard.writeText(text);
       setCopied(true);
 
